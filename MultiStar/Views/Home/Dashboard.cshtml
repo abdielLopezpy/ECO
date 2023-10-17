@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+ <div class="wrapper d-flex align-items-stretch">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <nav id="sidebar" class="mt-0">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h1><a href="index.html" class="logo">Dashboard <span>E-Commerce Agency</span></a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <!-- add bog -->
+                        <li>
+                            <a href="/Blog"><i class="fa fa-newspaper-o"></i> Blog</a>
+                        <li class="active">
+                            <a href="/"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="/"><i class="fa fa-line-chart"></i> Resumen de Ventas</a>
+                        </li>
+                        <li>
+                            <a href="/Product"><i class="fa fa-shopping-cart"></i> Gestión de Productos </a>
+                        </li>
+                        <li>
+                            <a href="/Order"><i class="fa fa-file-text-o"></i> Gestión de Pedidos</a>
+                        </li>
+                        <li>
+                            <a href="/Customer"><i class="fa fa-user"></i> Gestión de Clientes</a>
+                        </li>
+                        <li>
+                            <a href="/Employee"><i class="fa fa-users"></i> Gestión de Empleados</a>
+                        </li>
+                        <li>
+                            <a href="/EmployeeAttendance"><i class="fa fa-calendar-check-o"></i> Gestión de Asistencia</a>
+                        </li>
+                        <li>
+                            <a href="/Inventory"><i class="fa fa-archive"></i> Información de Inventario</a>
+                        </li>
+                        <li>
+                            <a href="/Reports"><i class="fa fa-bar-chart"></i> Informes de Ventas</a>
+                        </li>
+                        <li>
+                            <a href="/Marketing"><i class="fa fa-bullhorn"></i> Marketing y Promociones</a>
+                        </li>
+                        <li>
+                            <a href="/Settings"><i class="fa fa-cog"></i> Configuración</a>
+                        </li>
+                    </ul>
+                    <div class="footer">
+                        <p>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                    </div>
+                </div>
+            </nav>
+        }
