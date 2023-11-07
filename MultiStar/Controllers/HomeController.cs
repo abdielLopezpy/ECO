@@ -30,7 +30,6 @@ namespace appDash.Controllers
 
             public IActionResult Dashboard()
         {
-            Console.WriteLine("Hola");
 
             return View();
         }

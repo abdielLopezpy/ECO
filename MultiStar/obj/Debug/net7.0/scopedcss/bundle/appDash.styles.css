@@ -47,3 +47,17 @@ button.accept-policy[b-bqxuor242u] {
   white-space: nowrap;
   line-height: 60px;
 }
+.fade-in[b-bqxuor242u] {
+  animation: fadeIn-b-bqxuor242u 1.5s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn-b-bqxuor242u {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
