@@ -11985,11 +11985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/invitado/Desktop/ECO/MultiStar/appDash.csproj",
+      "projectUniqueName": "/Users/invitado/Projects/ECO/MultiStar/appDash.csproj",
       "projectName": "appDash",
-      "projectPath": "/Users/invitado/Desktop/ECO/MultiStar/appDash.csproj",
+      "projectPath": "/Users/invitado/Projects/ECO/MultiStar/appDash.csproj",
       "packagesPath": "/Users/invitado/.nuget/packages/",
-      "outputPath": "/Users/invitado/Desktop/ECO/MultiStar/obj/",
+      "outputPath": "/Users/invitado/Projects/ECO/MultiStar/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/invitado/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "apR2XRhQKFZKjVVslSCEcHoUJXuFhSExOkVvEU2oaDp2UDGyR6qscSTt4meIUNYfEeCcgsV/JVz/9WSElEpczQ==",
+  "dgSpecHash": "70JfBPZuUYeaLcqxk1I1mUv1kPEVTr65yKGmgCwcNM1OU5q5dopAW98szc/CbFzWle7qQp31q0FCeOWaXFFoLg==",
   "success": true,
-  "projectFilePath": "/Users/invitado/Desktop/ECO/MultiStar/appDash.csproj",
+  "projectFilePath": "/Users/invitado/Projects/ECO/MultiStar/appDash.csproj",
   "expectedPackageFiles": [
     "/Users/invitado/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/invitado/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
