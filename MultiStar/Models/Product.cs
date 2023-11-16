@@ -20,8 +20,7 @@ namespace appDash.Models
         [Range(0.01, double.MaxValue, ErrorMessage = "El Precio debe ser mayor que cero.")]
         public decimal Price { get; set; }
 
-        // Agregar el campo UserId para el usuario que crea el producto
-        public required string UserId { get; set; }
+        public required string AuthorEmail { get; set; }
 
         private static int GenerateRandomProductId()
         {
