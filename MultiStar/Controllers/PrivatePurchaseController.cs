@@ -25,6 +25,7 @@ public PrivatePurchaseController(ApplicationDbContext context)
         public IActionResult Create()
         {
     ViewBag.ProductId = new SelectList(_context.Products, "Id", "Name");
+    ViewBag.ProductPrices = _context.Products.ToDictionary(p => p.Id, p => p.Price);
     return View();        }
 
         // POST: Purchase/Create
