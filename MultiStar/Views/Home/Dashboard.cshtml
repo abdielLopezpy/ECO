@@ -2,60 +2,83 @@
     ViewData["Title"] = "Dashboard";
 }
 
- <div class="wrapper d-flex align-items-stretch">
-        @if (User.Identity.IsAuthenticated)
-        {
-            <nav id="sidebar" class="mt-0">
-                <div class="custom-menu">
-                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
-                        <i class="fa fa-bars"></i>
-                        <span class="sr-only">Toggle Menu</span>
-                    </button>
-                </div>
-                <div class="p-4">
-                    <h1><a href="index.html" class="logo">Dashboard <span>E-Commerce Agency</span></a></h1>
-                    <ul class="list-unstyled components mb-5">
-                        <!-- add bog -->
-                        <li>
-                            <a href="/Blog"><i class="fa fa-newspaper-o"></i> Blog</a>
-                        <li class="active">
-                            <a href="/"><i class="fa fa-home"></i> Home</a>
-                        </li>
-                        <li>
-                            <a href="/"><i class="fa fa-line-chart"></i> Resumen de Ventas</a>
-                        </li>
-                        <li>
-                            <a href="/Product"><i class="fa fa-shopping-cart"></i> Gestión de Productos </a>
-                        </li>
-                        <li>
-                            <a href="/Order"><i class="fa fa-file-text-o"></i> Gestión de Pedidos</a>
-                        </li>
-                        <li>
-                            <a href="/Customer"><i class="fa fa-user"></i> Gestión de Clientes</a>
-                        </li>
-                        <li>
-                            <a href="/Employee"><i class="fa fa-users"></i> Gestión de Empleados</a>
-                        </li>
-                        <li>
-                            <a href="/EmployeeAttendance"><i class="fa fa-calendar-check-o"></i> Gestión de Asistencia</a>
-                        </li>
-                        <li>
-                            <a href="/Inventory"><i class="fa fa-archive"></i> Información de Inventario</a>
-                        </li>
-                        <li>
-                            <a href="/Reports"><i class="fa fa-bar-chart"></i> Informes de Ventas</a>
-                        </li>
-                        <li>
-                            <a href="/Marketing"><i class="fa fa-bullhorn"></i> Marketing y Promociones</a>
-                        </li>
-                        <li>
-                            <a href="/Settings"><i class="fa fa-cog"></i> Configuración</a>
-                        </li>
-                    </ul>
-                    <div class="footer">
-                        <p>
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+@if (User.Identity.IsAuthenticated)
+{
+
+    <div class="container mt-4">
+        <h1 id="dashboard-title" class="text-center display-3 fade-in" style="color: #000;">Dashboard</h1>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-shopping-cart"></i> Gestión de Productos</h5>
+                        <p class="card-text">Administra tus productos aquí. En esta sección puedes agregar, editar y eliminar productos en tu inventario.</p>
+                        <a href="/Product" class="btn btn-primary bg-dark">Ir a la gestión de productos</a>
                     </div>
                 </div>
-            </nav>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title "><i class="fas fa-file-alt"></i> Gestión de Pedidos</h5>
+                        <p class="card-text">Administra tus pedidos aquí. Haz un seguimiento de los pedidos realizados por tus clientes y gestiona su estado.</p>
+                        <a href="/Order" class="btn btn-primary bg-dark">Ir a la gestión de pedidos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-user"></i> Gestión de Clientes</h5>
+                        <p class="card-text">Administra tus clientes aquí. Agrega y actualiza información de tus clientes, y realiza un seguimiento de sus compras.</p>
+                        <a href="/Customer" class="btn btn-primary bg-dark">Ir a la gestión de clientes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-money-bill-alt"></i> Facturación</h5>
+                        <p class="card-text">Administra la facturación de tu negocio. Crea y gestiona facturas para tus transacciones comerciales.</p>
+                        <a href="/Purchase" class="btn btn-primary bg-dark">Ir a la gestión de facturación</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<script>
+    window.addEventListener('load', function () {
+        var dashboardTitle = document.getElementById('dashboard-title');
+        var colors = ['#FF5733', '#33FFA2', '#334AFF', '#FF33E1', '#33FFE9'];
+        var currentColorIndex = 0;
+        var text = dashboardTitle.textContent;
+        var textLength = text.length;
+        var animationDuration = 1000;
+
+        function changeColorAndShowLetters() {
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+            dashboardTitle.style.color = colors[currentColorIndex];
+
+            var interval = animationDuration / textLength;
+            var index = 0;
+
+            function showLetters() {
+                if (index < textLength) {
+                    dashboardTitle.innerHTML = text.substr(0, index) +
+                        `<span style="color: ${colors[currentColorIndex]}">${text.charAt(index)}</span>` +
+                        text.substr(index + 1);
+                    index++;
+                    setTimeout(showLetters, interval);
+                } else {
+
+                    setTimeout(changeColorAndShowLetters, animationDuration);
+                }
+            }
+
+            showLetters();
         }
+
+        changeColorAndShowLetters();
+    });
+</script>

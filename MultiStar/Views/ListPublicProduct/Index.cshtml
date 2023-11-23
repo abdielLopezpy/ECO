@@ -18,7 +18,7 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Quantity: @Html.DisplayFor(modelItem => item.Quantity)</li>
                             <li class="list-group-item">Price: $@Html.DisplayFor(modelItem => item.Price)</li>
-                            <li class="list-group-item">User ID: @Html.DisplayFor(modelItem => item.UserId)</li>
+                        <p class="card-text">Author: @Html.DisplayFor(modelItem => item.AuthorEmail)</p>
                         </ul>
                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info mt-3">Details</a>
                         <!-- Puedes agregar más acciones aquí -->

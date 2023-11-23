@@ -1,0 +1,114 @@
+@model appDash.Models.Purchase
+
+@{
+    ViewData["Title"] = "Carrito de Compra";
+    var productPrices = ViewBag.ProductPrices;
+}
+
+<h1 class="text-center">Carrito de Compra</h1>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="ProductId" class="control-label">Seleccionar Producto</label>
+                    <select asp-for="ProductId" class="form-control" asp-items="ViewBag.ProductId" id="productSelect">
+                        <option value="">-- Seleccionar Producto --</option>
+                    </select>
+                    <span asp-validation-for="ProductId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label id="productPriceLabel" class="control-label">Precio:</label>
+                    <span id="displayProductPrice" class="font-weight-bold text-primary"> $0.00</span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Quantity" class="control-label">Cantidad</label>
+                    <input asp-for="Quantity" class="form-control" />
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label id="totalPriceLabel" class="control-label">Precio Total:</label>
+                    <span id="displayTotalPrice" class="font-weight-bold text-success"> $0.00</span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="FullName" class="control-label">Nombre Completo</label>
+                    <input asp-for="FullName" class="form-control" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">Correo Electrónico</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label">Dirección</label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Phone" class="control-label">Teléfono</label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+<div class="form-group">
+    <label asp-for="PaymentMethod" class="control-label"></label>
+    <select asp-for="PaymentMethod" class="form-control">
+        <option value="">-- Selecciona un método de pago --</option>
+        <option value="BankTransfer">Transferencia Bancaria</option>
+        <option value="Yappi">Yappi</option>
+        <option value="Cash">Efectivo</option>
+    </select>
+    <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+</div>
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">Agregar al Carrito</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        var productPrices = @Html.Raw(Json.Serialize(productPrices));
+
+        document.getElementById('productSelect').addEventListener('change', function() {
+            var selectedProductId = this.value;
+            var productPriceLabel = document.getElementById('productPriceLabel');
+            var totalPriceLabel = document.getElementById('totalPriceLabel');
+            var displayProductPrice = document.getElementById('displayProductPrice');
+            
+            if (productPrices[selectedProductId]) {
+                displayProductPrice.innerHTML = ' $' + productPrices[selectedProductId].toFixed(2);
+            } else {
+                displayProductPrice.innerHTML = ' $0.00';
+            }
+
+            updateTotalPrice();
+        });
+
+        document.getElementById('Quantity').addEventListener('input', function() {
+            updateTotalPrice();
+        });
+
+        function updateTotalPrice() {
+            var quantity = document.getElementById('Quantity').value;
+            var selectedProductId = document.getElementById('productSelect').value;
+            var totalPrice = productPrices[selectedProductId] * quantity;
+            var displayTotalPrice = document.getElementById('displayTotalPrice');
+            displayTotalPrice.innerHTML = ' $' + totalPrice.toFixed(2);
+        }
+    </script>
+}

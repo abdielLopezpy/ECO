@@ -9,7 +9,7 @@ using appDash.Data;
 using appDash.Models;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
-
+using System.IO;
 
 namespace appDash.Controllers
 {
@@ -60,11 +60,11 @@ public async Task<IActionResult> Create([Bind("Id,Name,Description,Quantity,Pric
 {
     if (User.Identity.IsAuthenticated)
     {
-        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var usermail = User.FindFirstValue(ClaimTypes.Email);
 
-        if (!string.IsNullOrEmpty(userId))
+        if (!string.IsNullOrEmpty(usermail))
         {
-            product.UserId = userId;
+            product.AuthorEmail = usermail;
             
             _context.Add(product);
             await _context.SaveChangesAsync();

@@ -23,5 +23,7 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<Order> Orders { get; set; }
     //agregar el DbSet para Order
     public DbSet<appDash.Models.Blog> Blog { get; set; } = default!;
+    //agregar el DbSet para Order
+    public DbSet<appDash.Models.Purchase> Purchase { get; set; } = default!;
 
 }
