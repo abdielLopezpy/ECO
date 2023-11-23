@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/invitado/Desktop/ECO/MultiStar/appDash.csproj": {}
+    "/Users/abdiellopez/Desktop/examen/ECO/MultiStar/appDash.csproj": {}
   },
   "projects": {
-    "/Users/invitado/Desktop/ECO/MultiStar/appDash.csproj": {
+    "/Users/abdiellopez/Desktop/examen/ECO/MultiStar/appDash.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/invitado/Desktop/ECO/MultiStar/appDash.csproj",
+        "projectUniqueName": "/Users/abdiellopez/Desktop/examen/ECO/MultiStar/appDash.csproj",
         "projectName": "appDash",
-        "projectPath": "/Users/invitado/Desktop/ECO/MultiStar/appDash.csproj",
-        "packagesPath": "/Users/invitado/.nuget/packages/",
-        "outputPath": "/Users/invitado/Desktop/ECO/MultiStar/obj/",
+        "projectPath": "/Users/abdiellopez/Desktop/examen/ECO/MultiStar/appDash.csproj",
+        "packagesPath": "/Users/abdiellopez/.nuget/packages/",
+        "outputPath": "/Users/abdiellopez/Desktop/examen/ECO/MultiStar/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/invitado/.nuget/NuGet/NuGet.Config"
+          "/Users/abdiellopez/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

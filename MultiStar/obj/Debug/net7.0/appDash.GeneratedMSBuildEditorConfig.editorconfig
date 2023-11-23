@@ -9,145 +9,145 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = appDash
 build_property.RootNamespace = appDash
-build_property.ProjectDir = /Users/invitado/Desktop/ECO/MultiStar/
+build_property.ProjectDir = /Users/abdiellopez/Desktop/examen/ECO/MultiStar/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/invitado/Desktop/ECO/MultiStar
+build_property.MSBuildProjectDirectory = /Users/abdiellopez/Desktop/examen/ECO/MultiStar
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Areas/Identity/Pages/_ViewStart.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Customer/Create.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Customer/Delete.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Customer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Customer/Details.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Customer/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Customer/Edit.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Customer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Customer/Index.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/CustomerPublic/Create.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/CustomerPublic/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJQdWJsaWMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Home/Dashboard.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Home/Index.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Home/Privacy.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/ListPublicProduct/Details.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/ListPublicProduct/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlzdFB1YmxpY1Byb2R1Y3QvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/ListPublicProduct/Index.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/ListPublicProduct/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGlzdFB1YmxpY1Byb2R1Y3QvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Order/Create.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Order/Delete.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Order/Details.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Order/Edit.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Order/Index.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/PrivatePurchase/Create.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/PrivatePurchase/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJpdmF0ZVB1cmNoYXNlL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Product/Create.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Product/Delete.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Product/Details.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Product/Edit.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Product/Index.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Purchase/Create.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Purchase/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHVyY2hhc2UvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Purchase/Delete.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Purchase/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHVyY2hhc2UvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Purchase/Details.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Purchase/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHVyY2hhc2UvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Purchase/Edit.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Purchase/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHVyY2hhc2UvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Purchase/Index.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Purchase/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHVyY2hhc2UvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Shared/Error.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Shared/_LoginPartial.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/_ViewImports.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/_ViewStart.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/invitado/Desktop/ECO/MultiStar/Views/Shared/_Layout.cshtml]
+[/Users/abdiellopez/Desktop/examen/ECO/MultiStar/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bqxuor242u

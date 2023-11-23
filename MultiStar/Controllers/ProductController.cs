@@ -11,6 +11,9 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.IO;
 
+using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
+
 namespace appDash.Controllers
 {
     [Authorize]
@@ -56,7 +59,7 @@ namespace appDash.Controllers
         }
 [HttpPost]
 [ValidateAntiForgeryToken]
-public async Task<IActionResult> Create([Bind("Id,Name,Description,Quantity,Price")] Product product)
+public async Task<IActionResult> Create([Bind("Id,Name,Description,Quantity,Price")] Product product, IFormFile imageFile)
 {
     if (User.Identity.IsAuthenticated)
     {
@@ -65,7 +68,26 @@ public async Task<IActionResult> Create([Bind("Id,Name,Description,Quantity,Pric
         if (!string.IsNullOrEmpty(usermail))
         {
             product.AuthorEmail = usermail;
-            
+
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imageFile.FileName);
+
+                // Crear la carpeta 'images' si no existe
+                var directory = Path.GetDirectoryName(path);
+                if (!Directory.Exists(directory))
+                {
+                    Directory.CreateDirectory(directory);
+                }
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                product.ImagePath = "/images/" + imageFile.FileName;
+            }
+
             _context.Add(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -73,7 +95,6 @@ public async Task<IActionResult> Create([Bind("Id,Name,Description,Quantity,Pric
     }
     return View(product);
 }
-
 
 
 

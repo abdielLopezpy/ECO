@@ -21,8 +21,7 @@ namespace appDash.Models
         public decimal Price { get; set; }
 
         public required string AuthorEmail { get; set; }
-        
-
+        public string ImagePath { get; set; }
         private static int GenerateRandomProductId()
         {
             // Genera un ID de forma aleatoria utilizando el reloj del sistema
